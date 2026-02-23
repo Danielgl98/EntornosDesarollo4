@@ -5,9 +5,19 @@
 
 package cuentas;
 
+/**
+ * Clase principal que ejecuta la aplicación
+ * y realiza operaciones sobre un objeto CCuenta
+ * @author Daniel
+ */
 
 public class Main {
 
+    /**
+     * Método principal de ejecución del programa
+     * @param args 
+     */
+    
     public static void main(String[] args) {
         CCuenta cuenta1;
 
@@ -17,6 +27,14 @@ public class Main {
         operativa_cuenta(cuenta1, 695);
     }
 
+    /**
+     * Realiza las operaciones sobre la cuenta bancaria
+     * muestra el saldo actual, retira una cantidad 
+     * ingresando una cantidad
+     * 
+     * @param cuenta1 Objeto cuenta sobre el que se trabaja
+     * @param cantidad Cantidad a ingresar
+     */
     private static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
         double saldoActual;
         saldoActual = cuenta1.estado();
